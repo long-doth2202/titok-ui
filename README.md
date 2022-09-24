@@ -4,6 +4,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Dependencies
 
+### Install react-router
+
+```bash
+npm i react-router-dom
+```
+
+### Config CSS/SASS
+
+```bash
+npm i sass -D
+```
+
 ### Install customize-cra
 
 #### 1) Install react-app-rewired
@@ -11,6 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```bash
 npm i customize-cra react-app-rewired -D
 ```
+
 #### 2) Create a `config-overrides.js` file in the root directory
 
 ```javascript
@@ -19,10 +32,11 @@ npm i customize-cra react-app-rewired -D
 module.exports = function override(config, env) {
   //do stuff with the webpack config...
   return config;
-}
+};
 ```
 
 #### 3) 'Flip' the existing calls to `react-scripts` in `npm` scripts for start, build and test
+
 ```diff
   /* package.json */
 
@@ -64,6 +78,7 @@ npm i babel-plugin-module-resolver -D
 ```
 
 #### 3) Create a `jsconfig.json`
+
 ```javascript
 /* jsconfig.json */
 {
@@ -77,19 +92,21 @@ npm i babel-plugin-module-resolver -D
 ```
 
 #### 4) Create a `config-overrides.js`
+
 ```javascript
 /* config-overrides.js */
-const { override, useBabelRc } = require("customize-cra");
+const { override, useBabelRc } = require('customize-cra');
 
 module.exports = override(
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useBabelRc()
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useBabelRc(),
 );
 ```
 
 ### Install prettier
 
 #### 1) Create a `.prettierrc`
+
 ```javascript
 /* .prettierrc */
 {
@@ -114,6 +131,7 @@ module.exports = override(
 ```
 
 #### 2) Create a `.vscode/settings.json`
+
 ```javascript
 /* settings.json */
 {
@@ -122,11 +140,7 @@ module.exports = override(
 }
 ```
 
-### Install react-router
 
-```bash
-npm i react-router-dom
-```
 
 ## Available Scripts
 
@@ -194,5 +208,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
