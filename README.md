@@ -10,6 +10,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npm i react-router-dom
 ```
 
+### Install tippyjs
+
+```bash
+npm i @tippyjs/react
+```
+
 ### Config CSS/SASS
 
 ```bash
